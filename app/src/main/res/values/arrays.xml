@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="get_start_titles">
+        <item>Variety of foods</item>
+        <item>Great taste</item>
+        <item>Good service</item>
+    </string-array>
+
+    <string-array name="get_start_description">
+        <item>Start browsing your\nfavourite foods</item>
+        <item>Our mission is to provide\ndelicious food.</item>
+        <item>Enjoy the fast delivery &amp;\nquality service</item>
+    </string-array>
+    
+</resources>

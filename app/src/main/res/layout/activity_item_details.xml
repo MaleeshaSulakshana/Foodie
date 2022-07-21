@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/soup"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="10dp"
+                        android:text="Chicken noodles"
+                        android:textColor="@color/black"
+                        android:textSize="24dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:padding="10dp"
+                        android:text="Large portion of noodles with creamy chicken, vegetables and extra cheese on top of the dish. "
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="normal" />
+
+                    <Spinner
+                        android:id="@+id/portionSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:entries="@array/spinnerItems"
+                        android:background="@drawable/stork_box"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="left"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:text="Rs. 1500"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical|right"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/btnDecrease"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/orange_circle_button_background"
+                                android:text="-"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mplus_rounded1c_bold"
+                                app:backgroundTint="@null"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:padding="10dp"
+                                android:textColor="@color/black"
+                                android:text="00"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnIncrease"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@drawable/orange_circle_button_background"
+                                android:text="+"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/mplus_rounded1c_bold"
+                                app:backgroundTint="@null"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnAddToCart"
+                        android:layout_width="180dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/orange_circle_button_background"
+                        android:text="Add to cart"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/mplus_rounded1c_bold"
+                        app:backgroundTint="@null"/>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_back" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

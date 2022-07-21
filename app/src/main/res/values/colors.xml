@@ -14,7 +14,10 @@
     <color name="orange4">#FF7800</color>
 
     <color name="gray1">#797777 </color>
+    <color name="gray2">#8D8D8D </color>
 
     <color name="white2">#E5E5E5</color>
+
+    <color name="yellow1">#E6D5B8</color>
 
 </resources>

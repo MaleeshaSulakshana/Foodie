@@ -4,8 +4,27 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/bdd8f0.xml" value="0.332" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/bottom_curve.xml" value="0.2325" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/dialog_box_bg.xml" value="0.2425" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/ic_menu.xml" value="0.2325" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/orange_circle_button_background.xml" value="0.2985" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/orange_stork_button_backorund.xml" value="0.2425" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/stork_box.xml" value="0.2425" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/drawable/top_corners_curve_bg.xml" value="0.2425" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_about.xml" value="0.358695652173913" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_account.xml" value="0.358695652173913" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_dashboard.xml" value="0.13186813186813187" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_faq.xml" value="0.4" />
         <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_get_start.xml" value="0.4" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_item_details.xml" value="0.358695652173913" />
         <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_main2.xml" value="0.18802083333333333" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/activity_sign_up.xml" value="0.35260416666666666" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/dialog_box_add_to_cart.xml" value="0.358695652173913" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/menu_header.xml" value="0.358695652173913" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/layout/menu_item_row.xml" value="0.358695652173913" />
+        <entry key="..\:/External-Projects/#JAPURA/Janani-UI/Foodie/app/src/main/res/menu/main_menu.xml" value="0.25396825396825395" />
       </map>
     </option>
   </component>

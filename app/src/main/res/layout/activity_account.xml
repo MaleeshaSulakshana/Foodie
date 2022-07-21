@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_arrow_back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Account"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Username"
+                android:textColor="@color/gray2"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/orange3"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColorHint="@color/gray1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="E-mail Address"
+                android:textColor="@color/gray2"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/orange3"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="E-mail address"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/gray1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Phone Number"
+                android:textColor="@color/gray2"
+                android:textSize="14dp" />
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:backgroundTint="@color/orange3"
+                android:fontFamily="@font/roboto_regular"
+                android:hint="Phone number"
+                android:inputType="number"
+                android:textColorHint="@color/gray1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/orange_circle_button_background"
+            android:fontFamily="@font/mplus_rounded1c_bold"
+            android:text="Sign Out"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -12,18 +12,126 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:gravity="center">
 
-        <com.tomer.fadingtextview.FadingTextView
-            android:id="@+id/fadingTextView"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
-            android:textColor="#2AC308"
+            android:layout_marginBottom="40dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/help1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Variety of foods"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textFontWeight="700"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/orange3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Start browsing your\nfavourite foods"
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:textFontWeight="400"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/gray2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/help2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Great taste"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textFontWeight="700"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/orange3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Our mission is to provide\ndelicious food."
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:textFontWeight="400"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/gray2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/help3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Good service"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textFontWeight="700"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/orange3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Enjoy the fast delivery &amp;\nquality service "
+                    android:textSize="12dp"
+                    android:textStyle="normal"
+                    android:textFontWeight="400"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/gray2"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="180dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/orange_circle_button_background"
+            android:text="GET START"
             android:textStyle="bold"
-            app:texts="@array/"
-            app:timeout="500"
-            tools:ignore="MissingClass" />
+            android:fontFamily="@font/mplus_rounded1c_bold"
+            app:backgroundTint="@null"/>
 
     </LinearLayout>
 

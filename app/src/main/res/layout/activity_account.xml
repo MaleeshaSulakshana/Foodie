@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".AccountActivity">
 
     <RelativeLayout
@@ -132,6 +133,7 @@
             android:background="@drawable/orange_circle_button_background"
             android:fontFamily="@font/mplus_rounded1c_bold"
             android:text="Sign Out"
+            android:textColor="@color/white"
             android:textStyle="bold"
             app:backgroundTint="@null" />
 

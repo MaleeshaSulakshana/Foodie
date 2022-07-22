@@ -129,6 +129,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/orange_circle_button_background"
             android:text="GET START"
+            android:textColor="@color/white"
             android:textStyle="bold"
             android:fontFamily="@font/mplus_rounded1c_bold"
             app:backgroundTint="@null"/>

@@ -91,6 +91,7 @@
                                 android:background="@drawable/orange_circle_button_background"
                                 android:text="-"
                                 android:textStyle="bold"
+                                android:textColor="@color/white"
                                 android:fontFamily="@font/mplus_rounded1c_bold"
                                 app:backgroundTint="@null"/>
 
@@ -101,7 +102,7 @@
                                 android:fontFamily="@font/roboto_regular"
                                 android:padding="10dp"
                                 android:textColor="@color/black"
-                                android:text="00"
+                                android:text="0"
                                 android:textSize="16dp"
                                 android:textStyle="bold" />
 
@@ -111,6 +112,7 @@
                                 android:layout_height="40dp"
                                 android:background="@drawable/orange_circle_button_background"
                                 android:text="+"
+                                android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:fontFamily="@font/mplus_rounded1c_bold"
                                 app:backgroundTint="@null"/>

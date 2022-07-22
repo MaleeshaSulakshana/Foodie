@@ -50,6 +50,7 @@
             android:background="@drawable/orange_circle_button_background"
             android:text="Order received"
             android:textStyle="bold"
+            android:textColor="@color/white"
             android:fontFamily="@font/mplus_rounded1c_bold"
             app:backgroundTint="@null"/>
 

@@ -13,36 +13,42 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.foodie.Adapters.MenuAdapter;
 import com.example.foodie.Classes.FoodMenuItem;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
-    private NavigationView navigationView;
+//    private DrawerLayout drawerLayout;
+//    private NavigationView navigationView;
     private ImageView btnMenu;
 
     private ListView menuList;
     private ArrayList<FoodMenuItem> detailsArrayList = new ArrayList<>();
 
-    private Boolean slideState = false;
+    private BottomSheetDialog menuDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
+        menuDialog = new BottomSheetDialog(DashboardActivity.this, R.style.BottomSheetTheme);
+        menuDialog.setContentView(R.layout.dialog_box_menu);
+
         menuList = (ListView) this.findViewById(R.id.menuList);
 
         btnMenu = (ImageView) this.findViewById(R.id.btnMenu);
 
-        drawerLayout = (DrawerLayout) this.findViewById(R.id.drawerLayout);
-        navigationView = (NavigationView) this.findViewById(R.id.navigationView);
+//        drawerLayout = (DrawerLayout) this.findViewById(R.id.drawerLayout);
+//        navigationView = (NavigationView) this.findViewById(R.id.navigationView);
 
         showDetails();
 
@@ -63,9 +69,80 @@ public class DashboardActivity extends AppCompatActivity {
         btnMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.openDrawer(GravityCompat.START);
+
+                LinearLayout btnHome, btnOrders, btnClose, btnAccount, btnInfo;
+                TextView btnFAQ;
+                menuDialog.show();
+
+                btnHome = (LinearLayout) menuDialog.findViewById(R.id.btnHome);
+                btnOrders = (LinearLayout) menuDialog.findViewById(R.id.btnOrders);
+                btnClose = (LinearLayout) menuDialog.findViewById(R.id.btnClose);
+                btnAccount = (LinearLayout) menuDialog.findViewById(R.id.btnAccount);
+                btnInfo = (LinearLayout) menuDialog.findViewById(R.id.btnInfo);
+
+                btnFAQ = (TextView) menuDialog.findViewById(R.id.btnFAQ);
+
+                btnHome.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+                btnOrders.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(DashboardActivity.this, OrderActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+                btnAccount.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(DashboardActivity.this, AccountActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+                btnInfo.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(DashboardActivity.this, AboutActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+                btnFAQ.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(DashboardActivity.this, FaqActivity.class);
+                        startActivity(intent);
+
+                    }
+                });
+
+                btnClose.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        menuDialog.dismiss();
+                    }
+                });
+
+
             }
         });
+
 
 
     }
@@ -86,66 +163,4 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-////        return super.onCreateOptionsMenu(menu);
-//        getMenuInflater().inflate(R.menu.main_menu, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()) {
-//
-//            case R.id.nav_home:
-////                Intent shareIntent = new Intent (Intent.ACTION_SEND);
-////                shareIntent.putExtra(Intent.EXTRA_SUBJECT, shareSub);
-////                shareIntent.putExtra (Intent.EXTRA_TEXT, shareBody);
-////                startActivity (Intent.createChooser (shareIntent,"Share App Locker"));
-//                Intent intent = new Intent(DashboardActivity.this, DashboardActivity.class);
-//                this.startActivity(intent);
-//
-//                return true;
-//
-//            case R.id.nav_orders:
-//                Intent intent2 = new Intent(DashboardActivity.this, DashboardActivity.class);
-//                this.startActivity(intent2);
-//
-//                return true;
-//
-//            case R.id.nav_account:
-//
-//                Intent intent3 = new Intent(DashboardActivity.this, AccountActivity.class);
-//                this.startActivity(intent3);
-//
-//                return true;
-//
-//            case R.id.nav_about:
-//
-//                Intent intent4 = new Intent(DashboardActivity.this, AboutActivity.class);
-//                this.startActivity(intent4);
-//
-//                return true;
-//
-//            case R.id.nav_faq:
-//
-//                System.out.println("**************");
-//
-//                startActivity(new Intent(DashboardActivity.this, FaqActivity.class));
-//                return true;
-//
-//
-//            default:
-//                return super.onOptionsItemSelected(item);
-//        }
-//    }
-//
-//
-//    @Override
-//    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-//
-//        System.out.println("**************");
-//
-//        return false;
-//    }
 }

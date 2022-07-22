@@ -4,6 +4,7 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -51,7 +52,10 @@ public class ItemDetailsActivity extends AppCompatActivity {
                 btnCart.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        addToCartDialog.dismiss();
+
+                        Intent intent = new Intent(ItemDetailsActivity.this, OrderActivity.class);
+                        startActivity(intent);
+
                     }
                 });
 

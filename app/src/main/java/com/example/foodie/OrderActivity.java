@@ -45,7 +45,7 @@ public class OrderActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(OrderActivity.this, ItemDetailsActivity.class);
+                Intent intent = new Intent(OrderActivity.this, DashboardActivity.class);
                 startActivity(intent);
 
             }

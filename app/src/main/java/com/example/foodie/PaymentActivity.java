@@ -24,7 +24,6 @@ public class PaymentActivity extends AppCompatActivity {
         confirmOrderDialog.setContentView(R.layout.dialog_box_confirm_order);
 
         btnBack = (ImageView) this.findViewById(R.id.btnBack);
-
         btnConfirmOrder = (Button) this.findViewById(R.id.btnConfirmOrder);
 
         btnBack.setOnClickListener(new View.OnClickListener() {

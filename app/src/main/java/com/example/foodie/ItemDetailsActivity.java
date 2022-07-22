@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -22,6 +23,8 @@ public class ItemDetailsActivity extends AppCompatActivity {
     private Button btnAddToCart;
     private Spinner spinner;
 
+    private ImageView btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +34,18 @@ public class ItemDetailsActivity extends AppCompatActivity {
         addToCartDialog.setContentView(R.layout.dialog_box_add_to_cart);
 
         btnAddToCart = (Button) this.findViewById(R.id.btnAddToCart);
+        btnBack = (ImageView) findViewById(R.id.btnBack);
         spinner = (Spinner) this.findViewById(R.id.portionSelect);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(ItemDetailsActivity.this, DashboardActivity.class);
+                startActivity(intent);
+
+            }
+        });
 
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
             @Override
